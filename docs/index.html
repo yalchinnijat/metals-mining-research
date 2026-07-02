@@ -148,13 +148,13 @@
 </div></section>
 
 <section id="report"><div class="wrap">
-  <div class="sechead"><h2>Current research</h2></div>
-  <div class="soon">
-    <strong class="serif" style="font-size:18px">Re-initiation: First Majestic Silver — coming August 2026.</strong>
-    <p style="margin-top:8px">A full research note with a mine-by-mine net-asset-value model, an explicit
-    silver price deck, peer-relative cost positioning, and a dated 12-month price target — which this
-    site will then track publicly, the same way the 2024 call was graded above.</p>
+  <div class="sechead"><h2>Current research</h2>
+    <p>Published July 2, 2026 — and tracked below in real time, the same way the 2024 call was graded.
+       Full note: <a href="report.html"><strong>First Majestic Silver: paying $86 silver prices in a $61 silver world →</strong></a></p>
   </div>
+  <div class="statband" id="callband"></div>
+  <div class="note">Rating: <strong>Neutral</strong>, 12-month target US$15.75 (1.5x NAV). Would turn buyers near US$13
+     or on NAV-accretive news — full triggers in the <a href="report.html">note</a>.</div>
 </div></section>
 
 <section id="about"><div class="wrap">
@@ -230,6 +230,20 @@
       <td class="r">${aisc==null?'—':'$'+aisc.toFixed(2)}</td></tr>`;
   }
   document.getElementById('compsTable').innerHTML = rows + '</tbody>';
+
+  // current-call tracker (report published Jul 2, 2026)
+  const CALL = {date:'2026-07-02', priceAtCall:17.42, target:15.75, rating:'NEUTRAL'};
+  const band = document.getElementById('callband');
+  if(band){
+    const now = ag.PriceNow;
+    const since = now/CALL.priceAtCall-1;
+    const toTgt = CALL.target/now-1;
+    band.innerHTML = `
+      <div class="stat acc"><div class="num">${CALL.rating}</div><div class="lbl">Rating, published ${CALL.date} at US$${CALL.priceAtCall.toFixed(2)}</div></div>
+      <div class="stat"><div class="num">$${CALL.target.toFixed(2)}</div><div class="lbl">12-month target (1.5x NAV of $10.49)</div></div>
+      <div class="stat"><div class="num">$${now.toFixed(2)}</div><div class="lbl">AG price now (${pct(since)} since publication)</div></div>
+      <div class="stat"><div class="num">${pct(toTgt)}</div><div class="lbl">Distance to target from here</div></div>`;
+  }
 
   // AG history table
   let ah = `<thead><tr><th>Fiscal year</th><th class="r">EBIT margin</th><th class="r">FCF margin</th>
