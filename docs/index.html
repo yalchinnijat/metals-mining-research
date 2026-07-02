@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Metals &amp; Mining Research — Yalchin Nijat</title>
+<style>
+  :root{
+    --ink:#16233b; --body:#38445c; --muted:#6b7690; --line:#dde3ee;
+    --accent:#1f5aa8; --accent-soft:#eef3fb; --good:#1a7a4a; --mixed:#a8760a;
+    --paper:#ffffff; --wash:#f6f8fc;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font:16px/1.65 -apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:var(--body);background:var(--paper)}
+  h1,h2,h3,.serif{font-family:Georgia,"Times New Roman",serif;color:var(--ink);font-weight:700}
+  .wrap{max-width:1020px;margin:0 auto;padding:0 24px}
+  a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
+
+  header{border-bottom:1px solid var(--line);padding:18px 0;position:sticky;top:0;background:rgba(255,255,255,.96);z-index:5}
+  .hrow{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px}
+  .brand{font-family:Georgia,serif;font-size:20px;color:var(--ink)}
+  nav a{margin-left:22px;color:var(--muted);font-size:14px}
+
+  .hero{padding:64px 0 40px}
+  .kicker{letter-spacing:.14em;text-transform:uppercase;font-size:12px;color:var(--accent);font-weight:600}
+  .hero h1{font-size:40px;line-height:1.2;margin:10px 0 14px;max-width:19em}
+  .hero p.lede{font-size:18px;max-width:44em}
+  .statband{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px;margin:34px 0 8px}
+  .stat{background:var(--wash);border:1px solid var(--line);border-radius:10px;padding:18px 20px}
+  .stat .num{font-family:Georgia,serif;font-size:34px;color:var(--ink)}
+  .stat .lbl{font-size:13px;color:var(--muted);margin-top:2px}
+  .stat.acc{background:var(--accent-soft);border-color:#c3d5ef}
+
+  section{padding:48px 0;border-top:1px solid var(--line)}
+  .sechead{margin-bottom:24px}
+  .sechead h2{font-size:28px}
+  .sechead p{color:var(--muted);max-width:46em;margin-top:6px}
+
+  table{width:100%;border-collapse:collapse;font-size:14.5px}
+  th{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);text-align:left;
+     border-bottom:2px solid var(--ink);padding:8px 10px;white-space:nowrap}
+  td{padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+  td.r,th.r{text-align:right;font-variant-numeric:tabular-nums}
+  tr.hl td{background:var(--accent-soft);font-weight:600}
+  .tablescroll{overflow-x:auto}
+  .pos{color:var(--good)} .neg{color:#b3372f}
+
+  .grade{display:inline-block;font-size:12px;font-weight:700;border-radius:20px;padding:2px 11px;white-space:nowrap}
+  .g-right{background:#e5f3ea;color:var(--good)} .g-part{background:#fbf1dc;color:var(--mixed)}
+  .callout{background:var(--wash);border-left:3px solid var(--accent);padding:16px 20px;border-radius:0 8px 8px 0;margin-top:22px;font-size:15px}
+
+  .chart{margin:8px 0 4px}
+  .bar-row{display:grid;grid-template-columns:170px 1fr 74px;align-items:center;gap:10px;margin:7px 0;font-size:14px}
+  .bar-track{background:var(--wash);border-radius:4px;height:20px;position:relative}
+  .bar{height:20px;border-radius:4px;background:#b9cbe4;min-width:2px}
+  .bar-row.hl .bar{background:var(--accent)} .bar-row.silver .bar{background:#8f9aae}
+  .bar-row.hl,.bar-row.silver{font-weight:600}
+  .val{text-align:right;font-variant-numeric:tabular-nums;color:var(--ink)}
+
+  .note{font-size:13px;color:var(--muted);margin-top:14px}
+  .soon{border:1px dashed #b9c4d8;border-radius:10px;padding:26px;background:var(--wash)}
+  footer{border-top:1px solid var(--line);padding:34px 0 60px;font-size:13px;color:var(--muted)}
+  footer p{max-width:60em;margin-bottom:10px}
+  @media (max-width:640px){ .hero h1{font-size:30px} nav a{margin-left:14px} .bar-row{grid-template-columns:120px 1fr 66px} }
+</style>
+</head>
+<body>
+
+<header><div class="wrap hrow">
+  <div class="brand">Metals &amp; Mining Research</div>
+  <nav>
+    <a href="#track-record">Track record</a>
+    <a href="#dashboard">Dashboard</a>
+    <a href="#report">Report</a>
+    <a href="#about">About</a>
+  </nav>
+</div></header>
+
+<div class="wrap hero">
+  <div class="kicker">Independent student research · Silver &amp; precious metals</div>
+  <h1>A silver-mining thesis, published, graded, and kept honest in public.</h1>
+  <p class="lede">In November 2024 I co-authored a buy case on First Majestic Silver (NYSE:&nbsp;AG).
+     This site grades that call against what actually happened, tracks the sector with a
+     self-updating comparables dashboard, and hosts my current research. Built and maintained
+     with AI-assisted tooling; every assumption is my own.</p>
+  <div class="statband" id="statband"></div>
+  <div class="note" id="asof"></div>
+</div>
+
+<section id="track-record"><div class="wrap">
+  <div class="sechead">
+    <h2>The November 2024 call, graded</h2>
+    <p>Seven specific predictions from the original analysis (Nov 21, 2024, AG at US$6.42),
+       each graded 19 months later. Honest grading matters more than a victory lap:
+       some calls were right for the wrong reason.</p>
+  </div>
+  <div class="tablescroll"><table>
+    <thead><tr><th style="width:46%">Prediction (Nov 2024)</th><th>Grade</th><th>What actually happened</th></tr></thead>
+    <tbody>
+      <tr><td>First Majestic is undervalued — a buying opportunity</td>
+          <td><span class="grade g-right">Right — direction</span></td>
+          <td>+171% since the call. But our multiples model implied only ~6% upside — it couldn't capture the silver price itself, the argument for the NAV model used in current work.</td></tr>
+      <tr><td>Jerritt Canyon will be sold or reopened as a more efficient mine, 2026–2027</td>
+          <td><span class="grade g-right">Right — best call</span></td>
+          <td>Restart plan announced April 2026: US$75M invested in 2026, pre-feasibility study due Q4 2026, production targeted H2 2027.</td></tr>
+      <tr><td>Gatos acquisition strains liquidity short-term; leverage then improves</td>
+          <td><span class="grade g-part">Half right</span></td>
+          <td>Right outcome, wrong mechanism: the deal was all-stock (~190M new shares), so the cost was dilution, not debt. Debt/EBITDA fell from 2.1x to 0.5x as EBITDA scaled.</td></tr>
+      <tr><td>ROE recovers via margin repair (DuPont: net margin was the broken lever)</td>
+          <td><span class="grade g-right">Right</span></td>
+          <td>From a US$182M net loss (2023) to record profitability — Q1 2026 alone: US$477M revenue, US$128M net earnings.</td></tr>
+      <tr><td>First Mint vertical integration boosts margins</td>
+          <td><span class="grade g-right">Right — small so far</span></td>
+          <td>Q4 2025 mint revenue +150% YoY to US$22.7M; ISO 9001 certified, IRA-eligible. Still ~2% of revenue.</td></tr>
+      <tr><td>Green-technology demand supports silver long-term</td>
+          <td><span class="grade g-part">Right thesis, different trigger</span></td>
+          <td>Silver roughly doubled — but the spike came from a physical shortage colliding with Chinese retail buying, with industrial demand as backdrop.</td></tr>
+      <tr><td>AG breaks away from peers on costs via economies of scale</td>
+          <td><span class="grade g-part">Not yet proven</span></td>
+          <td>AISC flat at US$21.17/AgEq oz through a major integration — respectable, but not a breakaway. Tracked in the dashboard below.</td></tr>
+    </tbody>
+  </table></div>
+  <div class="callout"><strong>The uncomfortable footnote:</strong> this was a sector-wide rally.
+    AG beat silver and half its peer group, but the biggest winners were the lowest-cost producer
+    (Fresnillo) and small, high-operating-leverage names. Being bullish silver and picking the
+    <em>best</em> silver miner are different skills — the current research below is built around that lesson.</div>
+</div></section>
+
+<section id="dashboard"><div class="wrap">
+  <div class="sechead">
+    <h2>Sector dashboard</h2>
+    <p>Total returns since the original call date, and the comparables framework
+       (profitability, cash generation, balance-sheet health) recomputed from each company's
+       latest annual statements. Refreshed automatically.</p>
+  </div>
+  <h3 style="margin-bottom:10px">Total return since Nov 21, 2024</h3>
+  <div class="chart" id="returnsChart"></div>
+  <div class="note">Price return, listed currency, dividends excluded. Silver shown for reference.</div>
+
+  <h3 style="margin:34px 0 10px">Comparables — latest fiscal year</h3>
+  <div class="tablescroll"><table id="compsTable"></table></div>
+  <div class="note">Ratios computed within each company's own statements, so reporting currency
+     (GBP for Fresnillo, CAD for Aya) does not distort comparisons. AISC shown where disclosed;
+     it is a non-GAAP metric hand-collected from company reports. Source: Yahoo Finance statement data.</div>
+
+  <h3 style="margin:34px 0 10px">First Majestic: the turnaround in four rows</h3>
+  <div class="tablescroll"><table id="agTable"></table></div>
+</div></section>
+
+<section id="report"><div class="wrap">
+  <div class="sechead"><h2>Current research</h2></div>
+  <div class="soon">
+    <strong class="serif" style="font-size:18px">Re-initiation: First Majestic Silver — coming August 2026.</strong>
+    <p style="margin-top:8px">A full research note with a mine-by-mine net-asset-value model, an explicit
+    silver price deck, peer-relative cost positioning, and a dated 12-month price target — which this
+    site will then track publicly, the same way the 2024 call was graded above.</p>
+  </div>
+</div></section>
+
+<section id="about"><div class="wrap">
+  <div class="sechead"><h2>About</h2></div>
+  <p style="max-width:46em">I'm <strong>Yalchin Nijat</strong>, a finance specialist student at the University of
+     Toronto (BCom '27, Finance &amp; Economics) focused on metals &amp; mining equity research.
+     Trilingual: English, Mandarin, Uyghur. The original First Majestic analysis was co-authored with
+     Chris and Daha for a UTM course in 2024; everything since — the grading, the data pipeline, and the
+     upcoming NAV work — is my own, built with AI-assisted tooling (the pipeline pulls statement data,
+     recomputes the ratio framework, and republishes this page automatically).</p>
+  <p style="margin-top:10px">Contact: <a href="mailto:yalqinn@gmail.com">yalqinn@gmail.com</a></p>
+</div></section>
+
+<footer><div class="wrap">
+  <p><strong>Disclaimer:</strong> This is an independent student research project for educational purposes.
+     Nothing on this site is investment advice or a recommendation to buy or sell any security.
+     Data is sourced from Yahoo Finance and company disclosures and may contain errors; figures are
+     unaudited. All views are my own.</p>
+  <p id="footAsOf"></p>
+</div></footer>
+
+<script src="data.js"></script>
+<script>
+(function(){
+  const D = window.SITE_DATA;
+  if(!D){ document.getElementById('asof').textContent = 'Data file missing — run the engine.'; return; }
+  const pct = v => v==null ? 'n/a' : (v>=0?'+':'')+(v*100).toFixed(1)+'%';
+  const x   = v => v==null ? 'n/a' : v.toFixed(1)+'x';
+  const n2  = v => v==null ? 'n/a' : v.toFixed(2);
+
+  const rets = D.returns.map(r => ({...r, ret: r.PriceNow/r.PriceAtCall - 1}));
+  const ag = rets.find(r => r.Ticker==='AG');
+  const agv= rets.find(r => r.Ticker==='SI=F');
+
+  // hero stats
+  const agH = (D.agHistory||[]).slice(-1)[0] || {};
+  document.getElementById('statband').innerHTML = `
+    <div class="stat acc"><div class="num">${pct(ag.ret)}</div><div class="lbl">First Majestic since the Nov 2024 call</div></div>
+    <div class="stat"><div class="num">${pct(agv.ret)}</div><div class="lbl">Silver over the same period</div></div>
+    <div class="stat"><div class="num">${pct(agH.ebitMargin)}</div><div class="lbl">AG EBIT margin, latest FY (was −31% in 2023)</div></div>
+    <div class="stat"><div class="num">${x(agH.debtEbitda)}</div><div class="lbl">AG debt / EBITDA (was 2.1x in 2024)</div></div>`;
+  document.getElementById('asof').textContent =
+    `Data as of ${D.generated}; prices as of ${ag.AsOf}. Regenerated automatically by the data pipeline.`;
+  document.getElementById('footAsOf').textContent = `Last updated ${D.generated}.`;
+
+  // returns chart
+  const sorted = [...rets].sort((a,b)=>b.ret-a.ret);
+  const maxR = Math.max(...sorted.map(r=>r.ret));
+  document.getElementById('returnsChart').innerHTML = sorted.map(r=>{
+    const cls = r.Ticker==='AG' ? 'hl' : (r.Ticker==='SI=F' ? 'silver' : '');
+    const w = Math.max(1.5, r.ret/maxR*100);
+    return `<div class="bar-row ${cls}"><div>${r.Name}</div>
+      <div class="bar-track"><div class="bar" style="width:${w}%"></div></div>
+      <div class="val">${pct(r.ret)}</div></div>`;
+  }).join('');
+
+  // comps table
+  const order = Object.keys(D.latestRatios)
+    .sort((a,b)=>(D.latestRatios[b].ebitMargin??-9)-(D.latestRatios[a].ebitMargin??-9));
+  let rows = `<thead><tr><th>Company</th><th class="r">FY</th><th class="r">EBIT margin</th>
+    <th class="r">FCF margin</th><th class="r">ROE</th><th class="r">Debt/EBITDA</th>
+    <th class="r">Quick ratio</th><th class="r">AISC $/oz</th></tr></thead><tbody>`;
+  for(const t of order){
+    const q = D.latestRatios[t];
+    const aisc = D.aisc[t] ? D.aisc[t]['2025'] : null;
+    const cls = t==='AG' ? ' class="hl"' : '';
+    const sign = v => v==null?'':(v>=0?' pos':' neg');
+    rows += `<tr${cls}><td>${D.companies[t].name}</td><td class="r">${q.year}</td>
+      <td class="r${sign(q.ebitMargin)}">${pct(q.ebitMargin)}</td>
+      <td class="r${sign(q.fcfMargin)}">${pct(q.fcfMargin)}</td>
+      <td class="r${sign(q.roe)}">${pct(q.roe)}</td>
+      <td class="r">${x(q.debtEbitda)}</td><td class="r">${n2(q.quick)}</td>
+      <td class="r">${aisc==null?'—':'$'+aisc.toFixed(2)}</td></tr>`;
+  }
+  document.getElementById('compsTable').innerHTML = rows + '</tbody>';
+
+  // AG history table
+  let ah = `<thead><tr><th>Fiscal year</th><th class="r">EBIT margin</th><th class="r">FCF margin</th>
+    <th class="r">Net margin</th><th class="r">ROE</th><th class="r">Debt/EBITDA</th></tr></thead><tbody>`;
+  for(const y of D.agHistory){
+    ah += `<tr><td>${y.year}</td><td class="r">${pct(y.ebitMargin)}</td><td class="r">${pct(y.fcfMargin)}</td>
+      <td class="r">${pct(y.netMargin)}</td><td class="r">${pct(y.roe)}</td><td class="r">${x(y.debtEbitda)}</td></tr>`;
+  }
+  document.getElementById('agTable').innerHTML = ah + '</tbody>';
+})();
+</script>
+</body>
+</html>
