@@ -1,5 +1,5 @@
 window.SITE_DATA = {
- "generated": "2026-07-02",
+ "generated": "2026-07-03",
  "callDate": "2024-11-21",
  "companies": {
   "AG": {
@@ -62,8 +62,8 @@ window.SITE_DATA = {
    "Ticker": "FNLPF",
    "Name": "Fresnillo PLC",
    "PriceAtCall": 7.96,
-   "PriceNow": 37.24,
-   "AsOf": "2026-07-01"
+   "PriceNow": 38.25,
+   "AsOf": "2026-07-02"
   },
   {
    "Ticker": "HL",
@@ -104,8 +104,8 @@ window.SITE_DATA = {
    "Ticker": "AYA.TO",
    "Name": "Aya Gold & Silver",
    "PriceAtCall": 12.76,
-   "PriceNow": 27.76,
-   "AsOf": "2026-07-02"
+   "PriceNow": 29.32,
+   "AsOf": "2026-07-03"
   },
   {
    "Ticker": "ASM",
@@ -118,8 +118,8 @@ window.SITE_DATA = {
    "Ticker": "SI=F",
    "Name": "Silver (spot proxy)",
    "PriceAtCall": 30.91,
-   "PriceNow": 61.6,
-   "AsOf": "2026-07-02"
+   "PriceNow": 62.81,
+   "AsOf": "2026-07-03"
   }
  ],
  "latestRatios": {
@@ -272,7 +272,7 @@ window.SITE_DATA = {
    "Price": 17.82,
    "MktCap_M": 8798.973952,
    "BookValuePS": 5.864,
-   "EV_M": 8009.183232,
+   "EV_M": 8394.323456,
    "TrailEBITDA_M": 798.038016,
    "Shares_M": 493.769568
   },
@@ -281,16 +281,16 @@ window.SITE_DATA = {
    "Price": 46.29,
    "MktCap_M": 19504.29184,
    "BookValuePS": 17.45,
-   "EV_M": 17910.44608,
+   "EV_M": 18736.29184,
    "TrailEBITDA_M": 1946.0,
    "Shares_M": 421.35
   },
   {
    "Ticker": "FNLPF",
-   "Price": 37.24,
-   "MktCap_M": 27441.917952,
+   "Price": 38.25,
+   "MktCap_M": 28186.179584,
    "BookValuePS": 6.287,
-   "EV_M": 25978.208256,
+   "EV_M": 26722.469888,
    "TrailEBITDA_M": 2581.615104,
    "Shares_M": 736.893589
   },
@@ -308,7 +308,7 @@ window.SITE_DATA = {
    "Price": 17.3,
    "MktCap_M": 17828.247552,
    "BookValuePS": 10.065,
-   "EV_M": 17040.861184,
+   "EV_M": 17827.088384,
    "TrailEBITDA_M": 1365.54496,
    "Shares_M": 1030.534551
   },
@@ -341,10 +341,10 @@ window.SITE_DATA = {
   },
   {
    "Ticker": "AYA.TO",
-   "Price": 27.76,
-   "MktCap_M": 3979.388928,
+   "Price": 29.32,
+   "MktCap_M": 4203.0144,
    "BookValuePS": 4.5501394,
-   "EV_M": 3789.036288,
+   "EV_M": 4141.676544,
    "TrailEBITDA_M": 154.392992,
    "Shares_M": 143.349749
   },
@@ -353,7 +353,7 @@ window.SITE_DATA = {
    "Price": 6.57,
    "MktCap_M": 1151.530624,
    "BookValuePS": 1.634,
-   "EV_M": 952.084992,
+   "EV_M": 987.824128,
    "TrailEBITDA_M": 53.995,
    "Shares_M": 175.271023
   }
