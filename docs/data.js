@@ -1,5 +1,5 @@
 window.SITE_DATA = {
- "generated": "2026-08-28",
+ "generated": "2026-08-29",
  "callDate": "2024-11-21",
  "companies": {
   "AG": {
@@ -48,77 +48,77 @@ window.SITE_DATA = {
    "Ticker": "AG",
    "Name": "First Majestic Silver",
    "PriceAtCall": 6.41,
-   "PriceNow": 21.74,
-   "AsOf": "2026-08-27"
+   "PriceNow": 20.76,
+   "AsOf": "2026-08-28"
   },
   {
    "Ticker": "PAAS",
    "Name": "Pan American Silver",
    "PriceAtCall": 22.5,
-   "PriceNow": 54.89,
-   "AsOf": "2026-08-27"
+   "PriceNow": 52.87,
+   "AsOf": "2026-08-28"
   },
   {
    "Ticker": "FNLPF",
    "Name": "Fresnillo PLC",
    "PriceAtCall": 7.96,
-   "PriceNow": 42.96,
-   "AsOf": "2026-08-27"
+   "PriceNow": 42.38,
+   "AsOf": "2026-08-28"
   },
   {
    "Ticker": "HL",
    "Name": "Hecla Mining",
    "PriceAtCall": 5.67,
-   "PriceNow": 21.43,
-   "AsOf": "2026-08-27"
+   "PriceNow": 20.38,
+   "AsOf": "2026-08-28"
   },
   {
    "Ticker": "CDE",
    "Name": "Coeur Mining",
    "PriceAtCall": 6.62,
-   "PriceNow": 22.21,
-   "AsOf": "2026-08-27"
+   "PriceNow": 21.13,
+   "AsOf": "2026-08-28"
   },
   {
    "Ticker": "EXK",
    "Name": "Endeavour Silver",
    "PriceAtCall": 4.5,
-   "PriceNow": 11.3,
-   "AsOf": "2026-08-27"
+   "PriceNow": 10.76,
+   "AsOf": "2026-08-28"
   },
   {
    "Ticker": "FSM",
    "Name": "Fortuna Mining",
    "PriceAtCall": 5.0,
-   "PriceNow": 12.81,
-   "AsOf": "2026-08-27"
+   "PriceNow": 12.26,
+   "AsOf": "2026-08-28"
   },
   {
    "Ticker": "SVM",
    "Name": "Silvercorp Metals",
    "PriceAtCall": 3.34,
-   "PriceNow": 13.46,
-   "AsOf": "2026-08-27"
+   "PriceNow": 12.77,
+   "AsOf": "2026-08-28"
   },
   {
    "Ticker": "AYA.TO",
    "Name": "Aya Gold & Silver",
    "PriceAtCall": 12.76,
-   "PriceNow": 40.53,
-   "AsOf": "2026-08-27"
+   "PriceNow": 38.85,
+   "AsOf": "2026-08-28"
   },
   {
    "Ticker": "ASM",
    "Name": "Avino Silver & Gold",
    "PriceAtCall": 1.14,
-   "PriceNow": 7.73,
-   "AsOf": "2026-08-27"
+   "PriceNow": 7.47,
+   "AsOf": "2026-08-28"
   },
   {
    "Ticker": "SI=F",
    "Name": "Silver (spot proxy)",
    "PriceAtCall": 30.91,
-   "PriceNow": 69.63,
+   "PriceNow": 67.09,
    "AsOf": "2026-08-28"
   }
  ],
@@ -269,8 +269,8 @@ window.SITE_DATA = {
  "valuation": [
   {
    "Ticker": "AG",
-   "Price": 21.74,
-   "MktCap_M": 10715.784192,
+   "Price": 20.76,
+   "MktCap_M": 10232.736768,
    "BookValuePS": 6.02,
    "EV_M": 10207.804416,
    "TrailEBITDA_M": 942.211968,
@@ -278,17 +278,17 @@ window.SITE_DATA = {
   },
   {
    "Ticker": "PAAS",
-   "Price": 54.89,
-   "MktCap_M": 22758.381568,
-   "BookValuePS": 17.45,
+   "Price": 52.87,
+   "MktCap_M": 21920.851968,
+   "BookValuePS": 17.642,
    "EV_M": 22031.192064,
    "TrailEBITDA_M": 2124.0,
    "Shares_M": 414.618
   },
   {
    "Ticker": "FNLPF",
-   "Price": 42.96,
-   "MktCap_M": 31656.947712,
+   "Price": 42.38,
+   "MktCap_M": 31229.550592,
    "BookValuePS": 6.95,
    "EV_M": 30430.291968,
    "TrailEBITDA_M": 4027.734016,
@@ -296,17 +296,17 @@ window.SITE_DATA = {
   },
   {
    "Ticker": "HL",
-   "Price": 21.43,
-   "MktCap_M": 14373.366784,
+   "Price": 20.38,
+   "MktCap_M": 13690.640384,
    "BookValuePS": 3.986,
    "EV_M": 13932.173312,
    "TrailEBITDA_M": 969.484992,
-   "Shares_M": 670.712403
+   "Shares_M": 671.768431
   },
   {
    "Ticker": "CDE",
-   "Price": 22.21,
-   "MktCap_M": 22830.434304,
+   "Price": 21.13,
+   "MktCap_M": 21720.264704,
    "BookValuePS": 10.121,
    "EV_M": 22491.318272,
    "TrailEBITDA_M": 1629.442048,
@@ -314,8 +314,8 @@ window.SITE_DATA = {
   },
   {
    "Ticker": "EXK",
-   "Price": 11.3,
-   "MktCap_M": 3346.432768,
+   "Price": 10.76,
+   "MktCap_M": 3186.514688,
    "BookValuePS": 2.406,
    "EV_M": 3351.232512,
    "TrailEBITDA_M": 281.5,
@@ -323,8 +323,8 @@ window.SITE_DATA = {
   },
   {
    "Ticker": "FSM",
-   "Price": 12.81,
-   "MktCap_M": 3791.21408,
+   "Price": 12.26,
+   "MktCap_M": 3628.437504,
    "BookValuePS": 5.97,
    "EV_M": 3462.946048,
    "TrailEBITDA_M": 750.460032,
@@ -332,8 +332,8 @@ window.SITE_DATA = {
   },
   {
    "Ticker": "SVM",
-   "Price": 13.46,
-   "MktCap_M": 2977.436928,
+   "Price": 12.77,
+   "MktCap_M": 2824.804608,
    "BookValuePS": 4.461,
    "EV_M": 2905.153024,
    "TrailEBITDA_M": 309.139008,
@@ -341,8 +341,8 @@ window.SITE_DATA = {
   },
   {
    "Ticker": "AYA.TO",
-   "Price": 40.53,
-   "MktCap_M": 5837.7856,
+   "Price": 38.85,
+   "MktCap_M": 5595.804672,
    "BookValuePS": 4.722126,
    "EV_M": 5751.857664,
    "TrailEBITDA_M": 207.972992,
@@ -350,8 +350,8 @@ window.SITE_DATA = {
   },
   {
    "Ticker": "ASM",
-   "Price": 7.73,
-   "MktCap_M": 1312.981248,
+   "Price": 7.47,
+   "MktCap_M": 1268.818816,
    "BookValuePS": 1.664,
    "EV_M": 1176.667648,
    "TrailEBITDA_M": 57.053,
