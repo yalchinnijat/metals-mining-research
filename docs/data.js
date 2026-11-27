@@ -1,5 +1,5 @@
 window.SITE_DATA = {
- "generated": "2026-11-26",
+ "generated": "2026-11-27",
  "callDate": "2024-11-21",
  "companies": {
   "AG": {
@@ -104,8 +104,8 @@ window.SITE_DATA = {
    "Ticker": "AYA.TO",
    "Name": "Aya Gold & Silver",
    "PriceAtCall": 12.76,
-   "PriceNow": 28.2,
-   "AsOf": "2026-11-25"
+   "PriceNow": 29.44,
+   "AsOf": "2026-11-26"
   },
   {
    "Ticker": "ASM",
@@ -118,8 +118,8 @@ window.SITE_DATA = {
    "Ticker": "SI=F",
    "Name": "Silver (spot proxy)",
    "PriceAtCall": 30.91,
-   "PriceNow": 41.99,
-   "AsOf": "2026-11-25"
+   "PriceNow": 43.79,
+   "AsOf": "2026-11-26"
   }
  ],
  "latestRatios": {
@@ -341,10 +341,10 @@ window.SITE_DATA = {
   },
   {
    "Ticker": "AYA.TO",
-   "Price": 28.2,
-   "MktCap_M": 4066.309376,
+   "Price": 29.44,
+   "MktCap_M": 4245.111552,
    "BookValuePS": 5.071059,
-   "EV_M": 3966.966016,
+   "EV_M": 4145.768192,
    "TrailEBITDA_M": 255.147008,
    "Shares_M": 144.195352
   },
